@@ -2,7 +2,7 @@ package headfirst.templatemethod.barista;
 
 public abstract class CaffeineBeverageWithHook {
  
-	void prepareRecipe() {
+	final void prepareRecipe() {
 		boilWater();
 		brew();
 		pourInCup();
@@ -15,11 +15,11 @@ public abstract class CaffeineBeverageWithHook {
  
 	abstract void addCondiments();
  
-	void boilWater() {
+	final void boilWater() {
 		System.out.println("Boiling water");
 	}
  
-	void pourInCup() {
+	final void pourInCup() {
 		System.out.println("Pouring into cup");
 	}
  
